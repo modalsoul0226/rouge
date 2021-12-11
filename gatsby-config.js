@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "rouge-site",
+    description: "Marxist cultural study group based in Toronto.",
+    author: "people"
   },
   plugins: [
     "gatsby-plugin-sass",

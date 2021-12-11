@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    build: .
+    command: sh -c "yarn install && gatsby build && gatsby develop -H 0.0.0.0"
+    ports:
+      - '8000:8000'
+    working_dir: /var/www/rouge
+    volumes:
+      - .:/var/www/rouge:cached
+  prod:
+    build: .
+    command: sh -c "yarn install && gatsby build && gatsby serve"
+    working_dir: /var/www/rouge
