@@ -5,12 +5,15 @@ $color: rgba(0, 0, 0, 0.85);
 
 /** Headers **/
 .title {
-    font-family: $font-en;
-    font-size: 6rem;
+    font-family: 'Times New Roman', Palantino, Athelas, sans-serif;
+    font-size: 8rem;
     font-weight: 500;
+    font-style: italic;
     line-height: 0.85;
     letter-spacing: -0.06em;
     color: $color;
+
+    transform: scaleX(0.7) scaleY(1.1) translateX(-20%);
 }
 
 .h2-pen {
