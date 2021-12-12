@@ -1,35 +1,41 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-// import Header from "./header/header"
-// import "./layout.css"
+import Bleed from "./layouts/bleed"
+import Header from "./layouts/header"
 
-const noScroll = {
-    overflowX: "hidden",
-    overflowY: "hidden"
+import "./layout.scss"
+
+const left = {
+    height: "100%",
+    width: "20%",
+    position: "absolute",
+    left: "0"
+}
+
+const right = {
+    height: "100%",
+    width: "100%",
+    position: "relative",
+}
+
+const mainStyle = {
+    height: "100%",
+    overflowY: "scroll"
 }
 
 const Layout = (props) => {
-    // const data = useStaticQuery(graphql`
-    //     query SiteTitleQuery {
-    //         site {
-    //             siteMetadata {
-    //                 title
-    //             }
-    //         }
-    //     }
-    // `)
-
-    let main = <main>{props.children}</main> 
-    if (props.noScroll)
-        main = <main style={noScroll}>{props.children}</main>
+    let main = <main style={mainStyle}>{props.children}</main>
 
     return (
-        <>
-            {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-            {main}
-        </>
+        <Bleed>
+            <div style={left}>
+                <Header/>
+            </div>
+            <div style={right}>
+                {main}
+            </div>
+        </Bleed>
     )
 }
 

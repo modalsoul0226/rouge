@@ -29,46 +29,52 @@ function SEO({ description, lang, meta, title }) {
 
     return (
         <Helmet
-        htmlAttributes={{
-            lang,
-        }}
-        title={title}
-        titleTemplate={`%s | ${site.siteMetadata.title}`}
-        meta={[
-            {
-                name: `description`,
-                content: metaDescription,
-            },
-            {
-                property: `og:title`,
-                content: title,
-            },
-            {
-                property: `og:description`,
-                content: metaDescription,
-            },
-            {
-                property: `og:type`,
-                content: `website`,
-            },
-            {
-                name: `twitter:card`,
-                content: `summary`,
-            },
-            {
-                name: `twitter:creator`,
-                content: site.siteMetadata.author,
-            },
-            {
-                name: `twitter:title`,
-                content: title,
-            },
-            {
-                name: `twitter:description`,
-                content: metaDescription,
-            },
-        ].concat(meta)}
-        />
+            htmlAttributes={{
+                lang,
+            }}
+            title={title}
+            titleTemplate={`%s | ${site.siteMetadata.title}`}
+            meta={[
+                {
+                    name: `description`,
+                    content: metaDescription,
+                },
+                {
+                    property: `og:title`,
+                    content: title,
+                },
+                {
+                    property: `og:description`,
+                    content: metaDescription,
+                },
+                {
+                    property: `og:type`,
+                    content: `website`,
+                },
+                {
+                    name: `twitter:card`,
+                    content: `summary`,
+                },
+                {
+                    name: `twitter:creator`,
+                    content: site.siteMetadata.author,
+                },
+                {
+                    name: `twitter:title`,
+                    content: title,
+                },
+                {
+                    name: `twitter:description`,
+                    content: metaDescription,
+                },
+            ].concat(meta)}
+        >
+            {/* 插入 Adobe 字体 */}
+            {/* <script src="./adobe/sourceHanSans.js"></script> */}
+            {/* 插入「汉字标准格式」 */}
+            <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.css"/>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.js"></script>
+        </Helmet>
     )
 }
 

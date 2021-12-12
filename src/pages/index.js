@@ -2,14 +2,17 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Home from "../components/home/home"
+
 const IndexPage = () => {
   return (
-    <Layout noScroll="False">
+    <Layout>
         <SEO 
             title="L'Atelier Rouge"
             description="Marxist cultural study group based in Toronto"
             lang="zh-Hans"
         />
+        <Home/>
     </Layout>
   )
 }

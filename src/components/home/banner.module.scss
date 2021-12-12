@@ -1,0 +1,27 @@
+.container {
+    float: left;
+    width: 70%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 60vh auto;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+        word-break: break-all;
+    }
+}
