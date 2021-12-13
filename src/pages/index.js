@@ -8,8 +8,8 @@ const IndexPage = () => {
   return (
     <Layout>
         <SEO 
-            title="L'Atelier Rouge"
-            description="Marxist cultural study group based in Toronto"
+            title="p0"
+            description="index page for in(ter)vention"
             lang="zh-Hans"
         />
         <Home/>

@@ -2,8 +2,8 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "rouge-site",
+    siteUrl: "https://in-ter-vention.ca",
+    title: "intervention",
     description: "Marxist cultural study group based in Toronto.",
     author: "people"
   },
@@ -27,6 +27,18 @@ module.exports = {
         typekit: {
           id: process.env.TYPEKIT_ID,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#c31414`,
+        theme_color: `#c31414`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.png`,
       },
     },
   ],
