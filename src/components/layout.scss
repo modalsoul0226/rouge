@@ -16,7 +16,8 @@ $color: rgba(0, 0, 0, 0.85);
     transform: scaleX(0.7) scaleY(1.1) translateX(-20%);
 }
 
-.h2-pen {
+.h2-en {
+    font-family: $font-en;
     font-size: 1.5rem;
     line-height: 0.9;
     font-weight: 500;
@@ -28,6 +29,12 @@ $color: rgba(0, 0, 0, 0.85);
     font-style: normal;
     font-size: 1.4rem;
     line-height: 1.2;
+}
+
+hr {
+    height: 2px !important;
+    background-color: black;
+    margin-left: 25%;
 }
 
 /** Scrollbar **/

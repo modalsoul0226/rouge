@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 const bleed = {
     width: "94%",
-    height: "100vh",
+    height: "100%",
     position: "relative",
     marginLeft: "3%",
     marginRight: "3%",
