@@ -14,7 +14,7 @@ const test3 = {
     width: "60%"
 }
 
-const Article = () => {
+const Content = () => {
     return (
         <>
             <div>
@@ -60,4 +60,4 @@ const Article = () => {
     )
 }
 
-export default Article
+export default Content
