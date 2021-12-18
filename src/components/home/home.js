@@ -1,7 +1,6 @@
 import React from "react"
 
 import Body from "../layouts/body"
-import Navigation from "../layouts/nav"
 import Banner from "./banner/banner"
 import Content from "../layouts/content"
 import Entry from "../layouts/table/entry"
@@ -9,7 +8,6 @@ import Entry from "../layouts/table/entry"
 const Home = () => {
     return (
         <Body>
-            <Navigation/>
             <Banner/>
             <hr/>
             <Content>

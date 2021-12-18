@@ -1,18 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import * as styles from "./bleed.module.scss"
+
 const bleed = {
     width: "94%",
-    height: "100%",
     position: "relative",
     marginLeft: "3%",
-    marginRight: "3%",
-    overflow: "hidden"
+    marginRight: "3%"
 }
 
 const Bleed = (props) => {
     return (
-        <div style={bleed}>
+        <div style={bleed} className={styles.container}>
             {props.children}
         </div>
     )
