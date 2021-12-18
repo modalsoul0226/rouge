@@ -23,7 +23,7 @@ const Home = () => {
                         <p>Dec</p>
                         <p>
                             为什么是政治，为什么是马克思<br/>
-                            <span className="h2-en">Why politics, Why Marx</span>
+                            {/* Why politics, Why Marx */}
                         </p>
                         <p>2021</p>
                     </Entry>

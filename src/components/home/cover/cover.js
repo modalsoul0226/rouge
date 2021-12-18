@@ -41,7 +41,7 @@ const Cover = () => {
                     <div className={styles.picBottom}>
                         <img className={styles.bottom} src={gleaners} alt="gleaners"/>
                         <div className={"h1-en " + styles.number}>3</div>
-                        <div className={"h1-en " + styles.label} lang="en">1. Millet, Jean-Francois. <cite>Des glaneuses</cite> (The Gleaners). 1857, Musée d’Orsay, Paris.</div>
+                        <div className={"h1-en " + styles.label} lang="en">3. Millet, Jean-Francois. <cite>Des glaneuses</cite> (The Gleaners). 1857, Musée d’Orsay, Paris.</div>
                     </div>
                     <div className={styles.picBottom}>
                         <img className={styles.bottom} src={missile1} alt="missile1"/>
