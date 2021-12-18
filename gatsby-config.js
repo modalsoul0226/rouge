@@ -3,7 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     siteUrl: "https://in-ter-vention.ca",
-    title: "intervention",
+    title: "in(ter)vention",
     description: "Marxist cultural study group based in Toronto.",
     author: "people"
   },
