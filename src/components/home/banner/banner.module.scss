@@ -5,10 +5,11 @@
     margin-left: 2%;
 
     display: grid;
-    grid-template-rows: 60vh auto;
+    grid-template-rows: 70vh auto;
 }
 
 .cover {
+    position: relative;
     height: 100%;
     width: 100%;
 }

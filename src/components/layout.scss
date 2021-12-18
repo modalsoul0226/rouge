@@ -16,11 +16,20 @@ $color: rgba(0, 0, 0, 0.85);
     transform: scaleX(0.7) scaleY(1.1) translateX(-20%);
 }
 
+.h1-en {
+    font-family: $font-en;
+    font-size: 5rem;
+    line-height: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .h2-en {
     font-family: $font-en;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 0.9;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .h2-zh {

@@ -1,13 +1,15 @@
 import * as React from "react"
 
-import Entry from "../layouts/table/entry"
+import Cover from "../cover/cover"
 
 import * as styles from "./banner.module.scss"
 
 const Banner = () => {
     return (
         <div className={styles.container + " paragraph"}>
-            <div className={styles.cover}></div>
+            <div className={styles.cover}>
+                <Cover/>
+            </div>
             <div className={styles.intro}>
                 <div>
                     <p className="h2-en">Marxist cultural study group based in Toronto.</p>
