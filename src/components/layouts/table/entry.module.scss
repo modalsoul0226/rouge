@@ -1,10 +1,17 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
 
     p {
         margin-left: 10%;
-        margin-right: 10%;
+        margin-block-start: 0;
+        margin-block-end: 0.5em;
         word-break: break-all;
+        line-height: 0.95;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(195, 20, 20);
     }
 }

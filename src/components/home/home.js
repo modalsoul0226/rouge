@@ -4,6 +4,10 @@ import Body from "../layouts/body"
 import Banner from "./banner/banner"
 import Content from "../layouts/content"
 import Entry from "../layouts/table/entry"
+import Table from "../layouts/table/table"
+
+import articles from "../contents/articles"
+
 
 const Home = () => {
     return (
@@ -15,32 +19,11 @@ const Home = () => {
                     <Entry>
                         <p>t</p>
                         <p>T</p>
+                        <p></p>
+                        <p></p>
                         <p>Y</p>
                     </Entry>
-                    <Entry>
-                        <p>Dec</p>
-                        <p>
-                            为什么是政治，为什么是马克思<br/>
-                            {/* Why politics, Why Marx */}
-                        </p>
-                        <p>2021</p>
-                    </Entry>
-                    <Entry>
-                        <p>Jan</p>
-                        <p>
-                            阿尔杜塞词典<br/>
-                            Althusser Glossary
-                        </p>
-                        <p>1969</p>
-                    </Entry>
-                    <Entry>
-                        <p>Feb</p>
-                        <p>
-                            电影/意识形态/批评<br/>
-                            Cinema / Ideology / Criticism
-                        </p>
-                        <p>1969</p>
-                    </Entry>
+                    <Table articles={articles}/>
                 </div>
             </Content>
         </Body>

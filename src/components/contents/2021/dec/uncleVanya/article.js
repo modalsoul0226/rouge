@@ -7,7 +7,8 @@ const article = {
         "title": "万尼亚舅舅",
         "originalTitle": "Uncle Vanya",
         "year": "1898",
-        "author": "Anton Checkhov"
+        "author": "Anton Checkhov",
+        "category": 2
     },
     "content": <Content/>,
     "link": "some-link"
