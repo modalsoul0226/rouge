@@ -15,16 +15,14 @@ const Home = () => {
             <Banner/>
             <hr/>
             <Content>
-                <div className="h2-zh">
-                    <Entry>
-                        <p>t</p>
-                        <p>T</p>
-                        <p></p>
-                        <p></p>
-                        <p>Y</p>
-                    </Entry>
-                    <Table articles={articles}/>
-                </div>
+                <Entry>
+                    <p>t</p>
+                    <p>T</p>
+                    <p></p>
+                    <p></p>
+                    <p>Y</p>
+                </Entry>
+                <Table articles={articles}/>
             </Content>
         </Body>
     )

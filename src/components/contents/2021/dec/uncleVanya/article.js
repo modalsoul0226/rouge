@@ -1,17 +1,14 @@
 import * as React from "react"
 
 import Content from "./content"
+import Header from "./header"
+import meta from "./meta"
 
 const article = {
-    "meta": {
-        "title": "万尼亚舅舅",
-        "originalTitle": "Uncle Vanya",
-        "year": "1898",
-        "author": "Anton Checkhov",
-        "category": 2
-    },
+    "meta": meta,
     "content": <Content/>,
-    "link": "some-link"
+    "header": <Header/>,
+    "link": "/articles/2021/dec/uncle-vanya"
 }
 
 export default article
