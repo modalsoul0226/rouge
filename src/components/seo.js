@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
             {/* <script src="./adobe/sourceHanSans.js"></script> */}
             {/* 插入「汉字标准格式」 */}
             <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.css"/>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.js"></script>
+            {/* <script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.2.7/han.min.js"></script> */}
         </Helmet>
     )
 }
