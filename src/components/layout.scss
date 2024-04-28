@@ -10,6 +10,7 @@ $red: rgb(195, 20, 20);
 
 /** Headers **/
 .title {
+    all: unset;
     font-family: 'Times New Roman', Palantino, Athelas, sans-serif;
     font-size: 8rem;
     font-weight: 500;
@@ -19,6 +20,12 @@ $red: rgb(195, 20, 20);
     color: $black;
 
     transform: scaleX(0.7) scaleY(1.1) translateX(-20%);
+    z-index: 3;
+
+    :hover {
+        color: $red;
+        cursor: pointer;
+    }
 }
 
 .en {
