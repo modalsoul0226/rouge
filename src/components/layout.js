@@ -1,10 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Bleed from "./layouts/bleed"
-import Header from "./layouts/header"
+import Bleed from './layouts/bleed'
+import Header from './layouts/header'
 
-import "./layout.scss"
+import './layout.scss'
 
 const Layout = (props) => {
     return (
@@ -18,5 +18,5 @@ const Layout = (props) => {
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
 }
- 
+
 export default Layout

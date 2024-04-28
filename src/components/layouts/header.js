@@ -18,7 +18,7 @@ const em = {
 
 const Header = () => {
     return (
-        <div style={header}>
+        <div className="hidden md:block" style={header}>
             <div className="title" style={headerTitle}>
                 in&nbsp;&nbsp;&nbsp;vention<br/>
                 &nbsp;&nbsp;&nbsp;<span style={em}>(ter)</span>

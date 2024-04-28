@@ -31,7 +31,7 @@
     position: relative;
     height: fit-content;
 
-    div {
+    h1 {
         display: none;
         top: 0;
         left: 0;
@@ -41,7 +41,7 @@
     &:hover {
         cursor: pointer;
 
-        div {
+        h1 {
             display: block;
         }
     }
@@ -50,8 +50,8 @@
 .picTop {
     position: relative;
     // height: fit-content;
-    
-    div {
+
+    h1 {
         display: none;
         bottom: 0;
         right: 0;
@@ -61,7 +61,7 @@
     &:hover {
         cursor: pointer;
 
-        div {
+        h1 {
             display: block;
         }
     }
@@ -102,7 +102,6 @@
     grid-template-rows: 45% 55%;
 }
 
-
 // ===== top =====
 
 .topLeft {
@@ -142,4 +141,3 @@
     display: grid;
     grid-template-columns: 35% 65%;
 }
-

@@ -1,10 +1,8 @@
-import * as React from "react"
-import {Link} from "gatsby"
-import PropTypes from "prop-types"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 
-import * as styles from "./entry.module.scss"
-
-const months = ["null", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+import * as styles from './entry.module.scss'
 
 const Entry = (props) => {
     let children = props.children
@@ -13,35 +11,33 @@ const Entry = (props) => {
     const article = props.article
 
     if (!article) {
-        return (
-            <div className={styles.container}>
-                {children}
-            </div>
-        )
+        return <div className={styles.container}>{children}</div>
     }
 
     // title cell
-    const cell = <p>
-        {article.meta.title}<br/>{article.meta.originalTitle}
-    </p>
-    
-    children = <>
-        <p>{parseInt(props.mid) === 0 ? months[props.month] : undefined}</p>
-        {article.meta.category === 0 ? cell : <p></p>}
-        {article.meta.category === 1 ? cell : <p></p>}
-        {article.meta.category === 2 ? cell : <p></p>}
-        <p>{article.meta.year}</p>
-    </>
+    const cell = (
+        <p>
+            {article.title}
+            <br />
+            {article.titleOriginal}
+        </p>
+    )
+
+    children = (
+        <>
+            <p>{article.month}</p>
+            <p>{article.author}</p>
+            {article.category === 0 ? cell : <p></p>}
+            {article.category === 1 ? cell : <p></p>}
+            <p>{article.year}</p>
+        </>
+    )
 
     return (
-        <Link to={article.link} className={styles.container}>
+        <Link to={'articles' + article.slug} className={styles.container}>
             {children}
         </Link>
     )
-}
-
-Entry.propTypes = {
-    children: PropTypes.node.isRequired,
 }
 
 export default Entry

@@ -1,7 +1,8 @@
 import * as React from "react"
 
 const container = {
-    width: "100%"
+    width: "100%",
+    overflow: "hidden"
 }
 
 const title = {
@@ -20,14 +21,14 @@ const Banner = (props) => {
             <div style={container}>
                 {props.children}
                 <div style={title}>
-                    <div className={"h1-zh"}>{props.title}</div>
-                    <div className={"h1-en"}>{props.originalTitle}</div>
+                    <h1 className={"zh"}>{props.title}</h1>
+                    <h1 className={"en"}>{props.originalTitle}</h1>
                 </div>
                 <div style={author}>
-                    <div className={"h1-en"}>
+                    <h1 className={"en"}>
                         {props.author}<br/>
                         {props.year}
-                    </div>
+                    </h1>
                 </div>
             </div>
             <hr/>

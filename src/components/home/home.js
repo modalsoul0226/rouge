@@ -1,28 +1,27 @@
-import React from "react"
+import React from 'react'
 
-import Body from "../layouts/body"
-import Banner from "./banner/banner"
-import Content from "../layouts/content"
-import Entry from "../layouts/table/entry"
-import Table from "../layouts/table/table"
+import Body from '../layouts/body'
+import Banner from './banner/banner'
+import Content from '../layouts/content'
+import Entry from '../layouts/table/entry'
+import Table from '../layouts/table/table'
 
-import articles from "../contents/articles"
-
-
-const Home = () => {
+const Home = (props) => {
     return (
         <Body>
-            <Banner/>
-            <hr/>
+            <Banner />
+            <br />
+            <hr />
+            <br />
             <Content>
                 <Entry>
-                    <p>t</p>
+                    <p>m</p>
+                    <p>A</p>
                     <p>T</p>
                     <p></p>
-                    <p></p>
-                    <p>Y</p>
+                    <p>y</p>
                 </Entry>
-                <Table articles={articles}/>
+                <Table articles={props.toc} />
             </Content>
         </Body>
     )

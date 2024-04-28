@@ -5,7 +5,7 @@ import * as styles from "./content.module.scss"
 
 const Content = (props) => {
     return (
-        <div className={"h2-zh " + styles.container}>
+        <div className={"zh " + styles.container}>
             {props.children}
         </div>
     )
